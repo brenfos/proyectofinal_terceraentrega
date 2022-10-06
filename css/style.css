@@ -1,80 +1,86 @@
-body{
-    height: 100vh;
-    width: 100 vw;
-    background-color: rgb(0, 0, 0);
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
 }
 
-  .carousel-inner>.carousel-item>img, .carousel-inner>.carousel-item>a>img {
-    display: block;
-    height: auto;
-    max-width: 80%;
-    line-height: 1;
-    margin:auto;
-    width: 80%;
-    height: 100%;
-    border-radius: 30px;
-    }
-
-.title{
-   
-    color: aliceblue;
-    font-family: 'Aboreto', cursive;  
+header {
+  font-family: "Aboreto", cursive;
+  color: aliceblue;
+  height: 30vh;
 }
-
-#banner{
-border-radius: 50px;
-width: 100%;
-}
-
-div ul li a{
-    font-family: 'Signika', sans-serif;
-
-
-}
-
-a:hover{   
-    transform: scale(1.2);
-    transition: transform 0.5s;
-    
-}
-
-.text{
-    color: aliceblue;
-    text-align: justify;
-}
-
-h5{
-    color: aliceblue;
-    font-family: 'Aboreto', cursive;   
-}
-
-#red:hover{
-    
-        transform: scale(1.2);
-        transition: transform 0.5s;
-
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #679cb7;
-}
-
-.hover-underline-animation:after {
-  content: '';
-  position: absolute;
+header img {
+  border-radius: 50px;
   width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #d2dbe0;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+}
+header div nav div a {
+  font-family: "Aboreto", cursive;
+  color: aliceblue;
+}
+header div nav div a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+header div nav div div .navbar-nav > li {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+main .text, main #textbio {
+  color: aliceblue;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+main #textbio {
+  font-size: 13px;
+}
+main .carousel-inner > .carousel-item > img, main .carousel-inner > .carousel-item > a > img {
+  display: block;
+  height: auto;
+  max-width: 80%;
+  line-height: 1;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  border-radius: 30px;
+}
+main thead th {
+  color: white;
+  font-family: "Aboreto", cursive;
+  font-size: 14px;
+}
+main th, main td {
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+}
+main nav ol {
+  margin-left: 10%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Aboreto", cursive;
+  font-size: 12px;
+}
+main a {
+  color: white;
+}
+
+h5 {
+  color: aliceblue;
+  font-family: "Aboreto", cursive;
+  font-size: 20px;
+}
+h5:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }

@@ -1,0 +1,110 @@
+@mixin vista{
+height: 100vh;
+width: 100vw;
+background-color: map-get($colores,"negro");
+}
+
+@mixin titulo{
+    font-family: $fuente;
+    color: map-get($colores,"especial");
+}
+
+@mixin banner{
+    img{
+border-radius: $borde+20;
+width: 100%;}
+}
+
+@mixin breadcrumb {
+    nav ol{
+        margin-left: 10%;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        font-family: $fuente;
+        font-size: $tamañofuente - 4;
+             }
+       a{
+        color: map-get($colores, "blanco");
+      
+       }
+}
+
+@mixin anim_hover {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+@mixin padding{
+    padding-left:1em;
+    padding-right:1em;
+}
+
+@mixin menu{
+    height: 30vh;
+        div{
+        nav{
+         div{
+           a{
+              font-family: $fuente;
+              color: map-get($colores, "especial");
+              &:hover{
+                @include anim_hover;
+            }  
+         }
+             div{
+                .navbar-nav > li{
+                    @include padding;
+             }
+
+            }
+        }
+  }    
+}
+}
+
+@mixin texto{
+    color: map-get($colores, "especial");
+    text-align: justify;
+    font-size: $tamañofuente;
+    font-family: $fuente2;
+}
+
+@mixin carrusel{
+    .carousel-inner>.carousel-item>img, .carousel-inner>.carousel-item>a>img {
+        display: block;
+        height: auto;
+        max-width: 80%;
+        line-height: 1;
+        margin:auto;
+        width: 80%;
+        height: 100%;
+        border-radius: $borde;
+        }
+
+}
+
+@mixin tabla{
+    thead th {
+        color: map-get($colores, "blanco");
+        font-family: $fuente;
+        font-size: $tamañofuente - 2;
+     }
+    th, td{
+        color: map-get($colores, "especial");
+        font-family: $fuente2;
+        font-size: $tamañofuente - 4;
+     }
+   }
+
+@mixin footer{
+     h5 {
+        color: map-get($colores, especial);
+        font-family: $fuente;
+        font-size: $tamañofuente+4;
+        &:hover{
+            @include anim_hover;
+        }  
+    }
+}
+

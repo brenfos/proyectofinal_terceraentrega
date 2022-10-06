@@ -1,0 +1,15 @@
+main{
+   .text{
+   @include texto;
+   }
+   #textbio{
+      @extend .text;
+      font-size: $tamañofuente - 3;
+   }
+   @include carrusel;
+   @include tabla;
+   @include breadcrumb;
+  
+  }
+
+
